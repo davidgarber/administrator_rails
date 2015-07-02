@@ -3,5 +3,13 @@
 <h4><%= @category.description %></h4>
 
 <p>
+  <%= link_to "Edit", edit_category_path(@category) %>
+</p>
+<p>
+  <%= link_to "Delete", category_path(@category),
+                        :data => {:confirm => "Are you sure?",
+                                  :method => "delete"} %>
+</p>
+<p>
   <%= link_to "Return to categories", categories_path %>
 </p>
