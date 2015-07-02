@@ -21,3 +21,29 @@ describe 'the edit a category process' do
     expect(page).to have_content "errors"
   end
 end
+
+describe "the edit a project process" do
+  it "edits a project" do
+    category = Category.create(:name => "ruby", :description => "language")
+    category.projects.create(:title => "Ping", :detail => "pong", :url => "ping-pong")
+    visit category_path(category)
+    click_on 'Alter'
+    fill_in 'Title', :with => 'To Do'
+    fill_in 'Detail', :with => 'list'
+    fill_in 'Url', :with => 'google.com'
+    click_on 'Update Project'
+    expect(page).to have_content "categories"
+  end
+
+  it "give errors when title, detail or url are left blank" do
+    category = Category.create(:name => "ruby", :description => "language")
+    category.projects.create(:title => "Ping", :detail => "pong", :url => "ping-pong")
+    visit category_path(category)
+    click_on 'Alter'
+    fill_in 'Title', :with => ''
+    fill_in 'Detail', :with => ''
+    fill_in 'Url', :with => ''
+    click_on 'Update Project'
+    expect(page).to have_content "errors"
+  end
+end
