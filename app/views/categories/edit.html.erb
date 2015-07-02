@@ -6,7 +6,7 @@
   <h3>Please fix these erros:</h3>
   <ul>
     <% @category.errors.full_messages.each do |message| %>
-      <li><%+ message %></li>
+      <li><% message %></li>
     <% end %>
   </ul>
 <% end %>
