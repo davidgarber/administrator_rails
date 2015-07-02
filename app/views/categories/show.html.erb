@@ -1,14 +1,14 @@
 <!-- <%= content_for(:navbar) %> -->
+<div class = "container">
 
 <h1><%= @category.name %></h1>
 
-<h4><%= @category.description %></h4>
+<h4><%= @category.description %></h4> <hr>
 
-<div class>
 
 
 <% if @category.projects.any? %>
-  <h4>Here are the projects for this category:</h4>
+  <h5>Here are the projects for this category:</h5>
 
   <ul>
     <% @category.projects.each do |project| %>
@@ -21,6 +21,7 @@
       </li>
     <% end %>
   </ul>
+  <hr>
 <% else %>
   <p>
     There are no projects, yet.
@@ -29,16 +30,16 @@
 
   <p>
     <%= link_to "Add a project", new_category_project_path(@category) %>
-  </p>
+  </p> <hr>
 
 <p>
-  <%= link_to "Edit", edit_category_path(@category) %>
+  <%= link_to "Edit this category", edit_category_path(@category) %>
 </p>
 <p>
-  <%= link_to "Delete", category_path(@category),
+  <%= link_to "Delete this category", category_path(@category),
                         :data => {:confirm => "Are you sure?",
                                   :method => "delete"} %>
-</p>
+</p> <hr>
 <p>
   <%= link_to "Return to categories", categories_path %>
 </p>

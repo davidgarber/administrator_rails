@@ -1,3 +1,5 @@
+<div class = "container">
+
 <%= render('layouts/errors', :object => @project) %>
 
 <%= form_for [@category, @project] do |f| %>
@@ -11,3 +13,4 @@
       <%= f.submit %>
   </p>
 <% end %>
+</div>

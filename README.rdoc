@@ -1,28 +1,23 @@
-== README
+#David Garber's Portfolio
+<h2>by</h2>
+David Garber
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h2>Description:</h2>
+This site displays my personal information, the languages I know and displays
+projects I have created.
 
-Things you may want to cover:
+<h2>Setup instructions:</h2>.
+In the terminal:
 
-* Ruby version
+Start Postgres
 
-* System dependencies
+$ember server
 
-* Configuration
+Got to localhost:3000 in your browser.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<h2>Bugs:</h2>
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+<h2>Copyright</h2>
+ MIT License. Copyright 2015 David Garber
