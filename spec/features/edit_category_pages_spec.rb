@@ -47,3 +47,13 @@ describe "the edit a project process" do
     expect(page).to have_content "errors"
   end
 end
+
+describe 'the delete a project process' do
+  it 'deletes a project' do
+    category = Category.create(:name => "ruby", :description => "language")
+    category.projects.create(:title => "Ping", :detail => "pong", :url => "ping-pong")
+    visit category_path(category)
+    click_on 'Destroy'
+    expect(page).to have_content "categories"
+  end
+end
