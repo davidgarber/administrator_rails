@@ -1,6 +1,11 @@
+<!-- <%= content_for(:navbar) %> -->
+
 <h1><%= @category.name %></h1>
 
 <h4><%= @category.description %></h4>
+
+<div class>
+
 
 <% if @category.projects.any? %>
   <h4>Here are the projects for this category:</h4>
@@ -37,3 +42,5 @@
 <p>
   <%= link_to "Return to categories", categories_path %>
 </p>
+
+</div>
