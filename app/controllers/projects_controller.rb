@@ -8,6 +8,7 @@ class ProjectsController < ApplicationController
     @category = Category.find(params[:category_id])
     @project = @category.projects.new(project_params)
     if @project.save
+      flash[:notice] = "Project successfully added!"
       redirect_to category_path(@project.category)
     else
       render :new
