@@ -514,12 +514,28 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/administrator_rails/spec/factories.rb": [
+        1,
+        1,
+        2,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/administrator_rails/config/routes.rb": [
         1,
         1,
         1,
         null,
         1,
+        null,
+        1,
+        null,
         1,
         1,
         null,
@@ -531,6 +547,8 @@
         null,
         1,
         null,
+        null,
+        1,
         null
       ],
       "/Users/Guest/Desktop/administrator_rails/app/helpers/application_helper.rb": [
@@ -545,6 +563,25 @@
         0,
         0,
         0,
+        null
+      ],
+      "/Users/Guest/Desktop/administrator_rails/spec/features/add_post_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/administrator_rails/spec/features/add_project_pages_spec.rb": [
@@ -673,6 +710,7 @@
         1,
         1,
         1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/administrator_rails/spec/models/project_spec.rb": [
@@ -761,6 +799,55 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/administrator_rails/app/controllers/posts_controller.rb": [
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/administrator_rails/app/controllers/projects_controller.rb": [
         1,
         1,
@@ -808,6 +895,6 @@
         null
       ]
     },
-    "timestamp": 1436542835
+    "timestamp": 1436546881
   }
 }
