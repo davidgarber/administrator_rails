@@ -8,4 +8,9 @@ FactoryGirl.define do
     title('Blog')
     body('This is not a blog.')
   end
+
+  factory(:comment) do
+    name('David')
+    comment('This is a blog.')
+  end
 end
