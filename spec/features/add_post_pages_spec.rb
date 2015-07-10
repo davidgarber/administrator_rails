@@ -14,4 +14,13 @@ describe "create a new post" do
     click_button 'Create Post'
     expect(page).to have_content 'Blog'
   end
+
+    it 'gives an error when no title or body is entered' do
+    user = FactoryGirl.create(:user)
+    login_as(user, :scope => :user)
+    visit posts_path
+    click_on 'Add a new post'
+    click_on 'Create Post'
+    expect(page).to have_content 'errors'
+  end
 end
