@@ -2,15 +2,37 @@
 
 <h1><%= @post.title %></h1>
 
+<% if @post.comments.any? %>
+  <h4>Here are the comments for this post:</h4>
+
+  <ul>
+    <% @post.comments.each do |comment| %>
+      <li>
+        <%= comment.comment %> by <%= comment.name %>|
+        <%= link_to "Edit", edit_post_comment_path(@post, comment) %> |
+        <%= link_to "Delete", post_comment_path(@post, comment),
+                               :data => {:confirm => "Are you sure?",
+                               :method => "delete"} %>
+      </li>
+    <% end %>
+<% else %>
+  </ul>
+  <p>
+    There are no comments, yet.
+  </p>
+<% end %><hr>
 <p>
-  <%= link_to "Edit", edit_post_path(@post) %>
+  <%= link_to "Add a comment", new_post_comment_path(@post) %>
+</p> <hr>
+<p>
+  <%= link_to "Edit post", edit_post_path(@post) %>
 </p>
 <p>
-  <%= link_to "Delete", post_path(@post),
+  <%= link_to "Delete post", post_path(@post),
                         :data => {:confirm => "Are you sure?",
                                   :method => "delete"} %>
 </p>
-
+<hr>
 
 <p>
   <%= link_to "Return to posts", posts_path %>
