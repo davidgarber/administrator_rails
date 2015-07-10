@@ -14,9 +14,20 @@
  *= require_self
  */
 
+//Import bootstrap-sprockets
 @import "bootstrap-sprockets";
+
+// Import cosmo variables
+@import "bootswatch/yeti/variables";
+
+// Then bootstrap itself
 @import "bootstrap";
 
-// body {
-//   padding: 70px;
-// }
+// Bootstrap body padding for fixed navbar
+// body { padding-top: 60px; }
+
+// And finally bootswatch style itself
+@import "bootswatch/yeti/bootswatch";
+
+// Whatever application styles you have go last
+// @import "base";
