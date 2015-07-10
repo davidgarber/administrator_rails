@@ -535,6 +535,8 @@
         1,
         null,
         1,
+        1,
+        null,
         null,
         1,
         1,
@@ -754,6 +756,25 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/administrator_rails/spec/models/comment_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/Guest/Desktop/administrator_rails/app/models/comment.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/administrator_rails/spec/models/post_spec.rb": [
         1,
         null,
@@ -951,6 +972,6 @@
         null
       ]
     },
-    "timestamp": 1436547612
+    "timestamp": 1436548140
   }
 }
