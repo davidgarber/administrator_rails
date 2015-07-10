@@ -14,4 +14,14 @@ describe 'the add a comment process' do
     click_on 'Create Comment'
     expect(page).to have_content 'This is not a comment.'
   end
+
+  it 'gives an error when no name or comment are entered' do
+    user = FactoryGirl.create(:user)
+    login_as(user, :scope => :user)
+    post = FactoryGirl.create(:post)
+    visit post_path(post)
+    click_on 'Add a comment'
+    click_on 'Create Comment'
+    expect(page).to have_content 'errors'
+  end
 end
