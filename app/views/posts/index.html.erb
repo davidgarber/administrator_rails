@@ -1,7 +1,14 @@
+<div class="col-md-5">
+
 <h1>Blog Posts</h1>
 
 <ul>
-  <% @posts.each do |list| %>
+  <% @posts.each do |post| %>
     <li><%= link_to post.title, post_path(post) %></li>
   <% end %>
 </ul>
+
+<hr>
+
+<%= link_to "Add a new post", new_post_path, :class => "btn btn-success btn-sm" %>
+</div>
