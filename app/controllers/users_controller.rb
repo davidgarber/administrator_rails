@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   def index
     @users = User.all
-    authorize User
   end
 
   def show
@@ -26,9 +25,20 @@ class UsersController < ApplicationController
     redirect_to users_path :notice => "User deleted"
   end
 
+  def create
+    @user = User.new(user_params)
+    if @user.save
+      flash[:notice] = "Welcome to the site!"
+      redirect_to "/"
+    else
+      flash[:alert] = "There was a problem creating your account. Please try again."
+      redirect_to :back
+    end
+  end
+
   private
 
   def secure_params
-    params.require(:user).permit(:email, :password)
+    params.require(:user).permit(:email, :password, :role, :admin)
   end
 end
