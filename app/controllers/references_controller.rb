@@ -4,7 +4,7 @@ class ReferencesController < ApplicationController
   end
 
   def show
-    @references = Reference.find(params[:id])
+    @reference = Reference.find(params[:id])
   end
 
   def new
@@ -13,10 +13,13 @@ class ReferencesController < ApplicationController
 
   def create
     @reference = Reference.new(reference_params)
+      respond_to do |format|
     if @reference.save
-      redirect_to references_path
+        format.html {redirect_to references_path}
+        format.js
     else
       render :new
+      end
     end
 end
 
@@ -27,7 +30,10 @@ end
   def update
     @reference = Reference.find(params[:id])
     if @reference.update(reference_params)
-      redirect_to references_path
+      respond_to do |format|
+        format.html {redirect_to references_path}
+        format.js
+      end
     else
       render :edit
     end
@@ -36,7 +42,10 @@ end
   def destroy
     @reference = Reference.find(params[:id])
     @reference.destroy
-    redirect_to references_path
+    respond_to do |format|
+      format.html {redirect_to references_path}
+      format.js
+    end
   end
 
 

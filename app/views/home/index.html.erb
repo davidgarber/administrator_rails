@@ -37,12 +37,12 @@
 
   <%= link_to "Add a new category", new_category_path, :class => "btn btn-success btn-sm"  %>
 
+
+<h1>References</h1> <hr>
+
+<%= link_to "Click for references", references_path, class: "references_link", remote: true  %>
+
+<div class="references" id="references">
+
 </div>
-
-<h1>References</h1>
-
-<ul>
-  <% @references.each do |references| %>
-    <li><%= link_to reference.name, category_path(reference) %></li>
-  <% end %>
-</ul>
+</div>
