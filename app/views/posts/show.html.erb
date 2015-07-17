@@ -26,7 +26,7 @@
 <% end %><hr>
 <% if current_user %>
 <p>
-  <%= link_to "Add a comment", new_post_comment_path(@post), :class => "btn btn-success btn-sm" %>
+  <%= link_to "Add a comment", new_post_comment_path(@post), id: 'new_post_comment_link', remote: true, :class => "btn btn-success btn-sm" %>
 </p>
 <% end %>
 <hr>
