@@ -1,9 +1,7 @@
-<h1>References</h1>
+<h1><%= link_to "References", references_path, class: 'references' %></h1>
 
 <ul>
-  <% @references.each do |reference| %>
-    <li><%= link_to reference.name, reference_path(reference) %> p: <%= reference.phone %></li>
-  <% end %>
+<%= render(@references) %>
 </ul>
 
 <% if current_user.admin === true %>
