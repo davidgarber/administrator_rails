@@ -1,8 +1,10 @@
-<h1><%= link_to "References", references_path, class: 'references' %></h1>
+<h1>References</h1>
+
 
 <ul>
 <%= render(@references) %>
 </ul>
+
 
 <% if current_user.admin === true %>
 <h1>Admin</h1>

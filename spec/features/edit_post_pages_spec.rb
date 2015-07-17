@@ -4,7 +4,7 @@ include Warden::Test::Helpers
 Warden.test_mode!
 
 describe "edit a post" do
-  it "edits a post" do
+  it "edits a post", js: true do
     user = FactoryGirl.create(:user)
     login_as(user, :scope => :user)
     post = FactoryGirl.create(:post)
@@ -16,7 +16,7 @@ describe "edit a post" do
     expect(page).to have_content 'Blog'
   end
 
-  it "returns error when body or title are blank" do
+  it "returns error when body or title are blank", js: true do
     user = FactoryGirl.create(:user)
     login_as(user, :scope => :user)
     post = FactoryGirl.create(:post)

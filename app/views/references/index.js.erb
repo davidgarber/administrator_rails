@@ -1,2 +1,4 @@
 $(".references_link").hide();
-$('.references').append("<%= j render(@references) %>");
+$('.references').html("<%= j render(@references) %>");
+$(".hide_references_link").hide();
+$('references_link').show();
