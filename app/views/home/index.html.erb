@@ -38,3 +38,11 @@
   <%= link_to "Add a new category", new_category_path, :class => "btn btn-success btn-sm"  %>
 
 </div>
+
+<h1>References</h1>
+
+<ul>
+  <% @references.each do |references| %>
+    <li><%= link_to reference.name, category_path(reference) %></li>
+  <% end %>
+</ul>

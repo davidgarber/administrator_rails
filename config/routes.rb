@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :users
 
+  resources :references
+
   resources :posts do
     resources :comments
   end
