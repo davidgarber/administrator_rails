@@ -7,24 +7,20 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'bootstrap-sass'
-gem 'bootswatch-rails'
-gem 'bcrypt-ruby', '~> 3.1.5', require: "bcrypt"
-gem 'pundit'
 gem 'pry'
-gem 'bootstrap_form'
+gem 'bootstrap-sass'
 gem 'devise'
-gem 'paperclip'
+gem 'cancancan'
+gem 'bootswatch-rails'
+gem 'bootstrap_forms'
+
 gem 'rails_12factor', group: :production
-
-
 
 group :development do
   gem 'byebug'
   gem 'web-console'
   gem 'spring'
   gem 'quiet_assets'
-  gem 'letter_opener'
 end
 
 group :test, :development do
@@ -35,10 +31,8 @@ end
 
 group :test do
   gem 'shoulda-matchers'
-
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
+  gem 'poltergeist'
   gem 'database_cleaner'
-
-ruby "2.2.0"
 end
