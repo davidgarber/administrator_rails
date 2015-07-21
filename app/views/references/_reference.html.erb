@@ -1,7 +1,13 @@
 
 
+<div class="hide_references">
 
-<%= form_for @reference, remote: true do |f| %>
-  <%= f.label :name, reference.name %> p: <%= reference.phone %>
+<% @references.each do |person| %>
+  <%= person.name %> p: <%= person.phone %><br>
 <% end %>
+
 <%= link_to "Click to hide references", root_path, class: "hide_references_link", remote: true, :class => "btn btn-danger btn-sm"   %>
+<!-- <%= form_for @reference do |f| %>
+  <%= f.label :name, reference.name %> p: <%= reference.phone %>
+<% end %> -->
+</div>

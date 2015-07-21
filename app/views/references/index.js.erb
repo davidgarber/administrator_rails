@@ -1,7 +1,7 @@
+
+
 $(".references_link").hide();
-$('.references').html("<%= j render(@references) %>");
-$(".hide_references_link").on("click", function(){
-  $(".hide_references_link").hide();
-  $('.references').empty();
-  $('references_link').show();
-});
+$('.references').html("<%= j render(@reference) %>");
+
+
+// $(".references").toggle(".hide_references");
