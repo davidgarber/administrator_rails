@@ -4,7 +4,10 @@ David Garber
 
 <h2>Description:</h2>
 This site displays my personal information, the languages I know and displays
-projects I have created.
+projects I have created, as well as, a blog, where only I can post, but anyone
+logged in can comment. Lastly, there is a references section which uses AJAX to
+display and hide the reference. I have seeded my name and number not to use as a
+reference but as a chance to show the use of AJAX.
 
 <h2>Setup instructions:</h2>.
 In the terminal:

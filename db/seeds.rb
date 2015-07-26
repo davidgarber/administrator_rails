@@ -16,3 +16,5 @@ Project.create(title:"Flashcards", detail:"Flashcards prepares one for a technic
 Project.create(title:"Pizza Company", detail:"Allows a user to select the size, topping and quantity of pizza(s) and it will show the price.", url:"http://pizzacompany.site44.com/", category_id: 2)
 Project.create(title:"Find and Replace", detail:"Allows the user to enter a phrase followed by a word to find then a word to replace and it will replace that word.", url:"http://findandreplace.site44.com/", category_id: 2)
 Project.create(title:"Portfolio", detail:"This site displays my personal information, the languages I know and displays projects I have created.", url:"https://shielded-beach-3319.herokuapp.com/", category_id: 3)
+
+Reference.create(name: "David Garber", phone:"(310) 429-6205")
