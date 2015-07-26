@@ -13,7 +13,7 @@
         <% if current_user.admin === true %>
         <%= link_to "Delete", post_comment_path(@post, comment),
                                :data => {:confirm => "Are you sure?",
-                               :method => "delete"}, :class => "btn btn-danger btn-sm"  %>
+                               :method => "delete"}, :class => "glyphicon glyphicon-trash"  %>
       <% end %>
       <% end %>
       </li>
@@ -38,7 +38,7 @@
 <p>
   <%= link_to "Delete post", post_path(@post),
                         :data => {:confirm => "Are you sure?",
-                                  :method => "delete"}, :class => "btn btn-danger btn-sm"  %>
+                                  :method => "delete"}, :class => "glyphicon glyphicon-trash"  %>
 </p>
 <% end %>
 <% end %>

@@ -14,10 +14,10 @@
     <% @category.projects.each do |project| %>
       <li>
         <%= project.title %> <br> <%= project.detail %> <br> <%= link_to project.url, project.url %> <br>
-        <%= link_to "Alter", edit_category_project_path(@category, project) %> |
-        <%= link_to "Destroy", category_project_path(@category, project),
+        <%= link_to "Edit", edit_category_project_path(@category, project) %> |
+        <%= link_to "Delete", category_project_path(@category, project),
                                :data => {:confirm => "Are you sure?",
-                                         :method => "delete"} %>
+                                         :method => "delete"}, :class => "glyphicon glyphicon-trash" %>
       </li>
       <hr>
     <% end %>
@@ -39,7 +39,7 @@
 <p>
   <%= link_to "Delete this category", category_path(@category),
                         :data => {:confirm => "Are you sure?",
-                                  :method => "delete"} %>
+                                  :method => "delete"}, :class => "glyphicon glyphicon-trash" %>
 </p> <hr>
 <p>
   <%= link_to "Return to categories", categories_path %>
