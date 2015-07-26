@@ -15,15 +15,15 @@ $ rake db:create
 
 $ rake db:migrate
 
+$ rake db:migrate
+
 $ rails server
 
 Got to localhost:3000 in your browser.
 
 In order to become an admin:
 
-$ rails console
-
-User.create(email: "", password: "", role: "admin", admin: true)
+log in: david@david.com password: 12345678
 
 This will give you the ability to add, edit and delete a post. Delete
 a comment and view users. As a user, you can only view posts and add
