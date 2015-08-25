@@ -8,6 +8,8 @@
 
 User.create(email:"david@david.com", password:"12345678", role:"admin", admin: true)
 
+Post.create(title:"Hello World!", body:"This is the seeded blog post. Care to comment?")
+
 Category.create(name:"Ruby", description:"A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.")
 Category.create(name:"Javascript", description:"A lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.")
 Category.create(name:"Rails", description:"A web application framework written in Ruby under MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages.")
