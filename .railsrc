@@ -1,0 +1,3 @@
+-d postgresql -T
+
+rails new administrator-rails -d postgresql -T
