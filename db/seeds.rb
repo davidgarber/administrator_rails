@@ -21,4 +21,4 @@ Project.create(title:"Find and Replace", detail:"Allows the user to enter a phra
 Project.create(title:"Portfolio", detail:"This site displays my personal information, the languages I know and displays projects I have created.", url:"https://fierce-beach-7757.herokuapp.com/", category_id: 3)
 Project.create(title:"La Popular", detail:"La Popular was created during StartUp Weekend Latino. We won best design and execution.", url:"http://lapopularpdx.co/", category_id: 4)
 
-Reference.create(name: "David Garber", phone:"(310) 429-6205")
+Reference.create(name: "Debbie Cravey", phone:"debbie@epicodus.com")
